@@ -5,10 +5,10 @@
 This has been improved by examining the code of https://github.com/ankitsam/office365-api-php-client  and https://github.com/jasonjoh/php-calendar 
 
 <h3>Sources:</h3> 
-<h4>- https://github.com/ankitsam/office365-api-php-client </h4>
-<h4>- https://msdn.microsoft.com/library/office/dn707383.aspx </h4>
-<h4> -https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx </h4>
-<h4>- https://github.com/jasonjoh/php-calendar</h4>
+<h5>- https://github.com/ankitsam/office365-api-php-client </h5>
+<h5>- https://msdn.microsoft.com/library/office/dn707383.aspx </h5>
+<h5> -https://msdn.microsoft.com/en-us/library/azure/dn645542.aspx </h5>
+<h5>- https://github.com/jasonjoh/php-calendar</h5>
 <br><br>
 <h3>HOW TO INSTALL</h3>
 <ul>
