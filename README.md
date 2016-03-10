@@ -37,6 +37,9 @@ This has been improved by examining at the code of @ankitsam  https://github.com
 <h4>Finally Get User Info</h4>
 
 <pre>
+    session_start();
+    $client = new Office365_Client();
+    $forward_url = $client->createAuthUrl();
     $code = $_GET['code'];
     $client->setCode($code);
     $client->fetchTokens(); //get tokens
