@@ -37,6 +37,11 @@ This has been improved by examining at the code of @ankitsam  https://github.com
 <h4>Finally Get User Info</h4>
 
 <pre>
+    $code = $_GET['code'];
+    $client->setCode($code);
+    $client->fetchTokens(); //get tokens
+    //let's get user info
+    $client->fetchJWT();
     //put the user token info into sessions
     $_SESSION['name'] = $client->getJwt()->getName();//full name of the user
     $_SESSION['unique_name'] = $client->getJwt()->getUniqueName();//could be email or id from office365
