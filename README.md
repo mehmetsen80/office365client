@@ -1,7 +1,8 @@
 # office365client
-php client for office365
 
-This client has been improved by looking at the code of @ankitsam  https://github.com/ankitsam/office365-api-php-client  
+<h1>PHP CLIENT FOR OFFICE365</h1>
+
+This has been improved by examining at the code of @ankitsam  https://github.com/ankitsam/office365-api-php-client  
 
 <h3>Sources:<h3> 
 <h4>- https://github.com/ankitsam/office365-api-php-client </h4>
@@ -9,7 +10,9 @@ This client has been improved by looking at the code of @ankitsam  https://githu
 <br><br>
 <h3>HOW TO INSTALL</h3>
 <ul>
-<li>copy paste the php files into your own server directory</li>
+<li>copy paste the php files into your own server directory
+    <h6>config.php, HttpPost.php, JWT.php, oauth2.php and Office365_Client.php</h6>
+</li>
 <li> Make sure you have curl library (i.e php5-curl) installed if not install it. For example for Ubuntu:
     
      <h6>$ sudo apt-get install php5-curl </h6> </li>
@@ -17,7 +20,7 @@ This client has been improved by looking at the code of @ankitsam  https://githu
 <li> Setup config.php with your client id, secret key and redirect url
     <h6>oauth2_client_id, oauth2_secret, oauth2_redirect</h6>  </li>
     
-<li> oauth2.php is your main file that uses the client
+<li> <b><u>oauth2.php</u></b> is your main file that uses the client
 </ul>
 
 <br><br>
@@ -25,9 +28,9 @@ This client has been improved by looking at the code of @ankitsam  https://githu
 <h6>Click Continue button to refresh the page and you get the user info</h6>
 <pre>print "&lt;a class='login' href='$forward_url'&gt;Connect Me!&lt;/a&gt;";</pre>
 
-<br><br>
-
-<b>It's also possible that you redirect the page automatically</b>
+<br>
+<h6>It's also possible that you redirect the page automatically</h6>
+<pre>  header( 'Location: $forward_url' );   </pre>
 
 <br><br>
 
