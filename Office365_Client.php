@@ -174,7 +174,7 @@ class Office365_Client
 
         return "Office365 ==> <br/>
                 code: ". $this->code ."<br/>".
-                "accessToken: ". $this->accessToken ."<br/>".
+                "accessToken: ". $this->accessToken ."<br/><br/>".
                 "refreshToken: ".$this->refreshToken ."<br/>";
     }
 
