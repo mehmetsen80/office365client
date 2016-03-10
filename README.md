@@ -30,7 +30,7 @@ This has been improved by examining at the code of @ankitsam  https://github.com
 
 <br>
 <h6>It's also possible that you redirect the page automatically</h6>
-<pre>  header( 'Location: $forward_url' );   </pre>
+<pre>  header( 'Location: '.$forward_url );   </pre>
 
 <br><br>
 
