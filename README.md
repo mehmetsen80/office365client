@@ -41,14 +41,17 @@ This has been improved by examining at the code of @ankitsam  https://github.com
     $client = new Office365_Client();
     $forward_url = $client->createAuthUrl();
     $code = $_GET['code'];
-    $client->setCode($code);
-    $client->fetchTokens(); //get tokens
-    //let's get user info
-    $client->fetchJWT();
-    //put the user token info into sessions
-    $_SESSION['name'] = $client->getJwt()->getName();//full name of the user
-    $_SESSION['unique_name'] = $client->getJwt()->getUniqueName();//could be email or id from office365
-    $_SESSION['tid'] = $client->getJwt()->getTid();//tenant id
+    if(isset($_GET['code'])) {
+        $client->setCode($code);
+        $client->fetchTokens(); //get tokens
+        $client->fetchJWT();//let's get user info
+        //put the user token info into sessions
+        $_SESSION['name'] = $client->getJwt()->getName();//full name of the user
+        $_SESSION['unique_name'] = $client->getJwt()->getUniqueName();//could be email or id from office365
+        $_SESSION['tid'] = $client->getJwt()->getTid();//tenant id
+    }else{
+        header( 'Location: '.$forward_url ); //redirect automatically on the first page visit, 2nd page visit will get the $code
+    }
     </pre>
 
 
