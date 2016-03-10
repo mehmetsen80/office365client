@@ -2,7 +2,7 @@
 
 <h1>PHP CLIENT FOR OFFICE365</h1>
 
-This has been improved by examining at the code of  https://github.com/ankitsam/office365-api-php-client  and https://github.com/jasonjoh/php-calendar 
+This has been improved by examining the code of https://github.com/ankitsam/office365-api-php-client  and https://github.com/jasonjoh/php-calendar 
 
 <h3>Sources:</h3> 
 <h4>- https://github.com/ankitsam/office365-api-php-client </h4>
