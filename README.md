@@ -11,14 +11,14 @@ This has been improved by examining at the code of @ankitsam  https://github.com
 <h3>HOW TO INSTALL</h3>
 <ul>
 <li>copy paste the php files into your own server directory
-    <h6>config.php, HttpPost.php, JWT.php, oauth2.php and Office365_Client.php</h6>
+    <pre>config.php, HttpPost.php, JWT.php, oauth2.php and Office365_Client.php</pre>
 </li>
 <li> Make sure you have curl library (i.e php5-curl) installed if not install it. For example for Ubuntu:
     
-     <h6>$ sudo apt-get install php5-curl </h6> </li>
+     <pre>$ sudo apt-get install php5-curl </pre> </li>
 
 <li> Setup config.php with your client id, secret key and redirect url
-    <h6>oauth2_client_id, oauth2_secret, oauth2_redirect</h6>  </li>
+    <pre>oauth2_client_id, oauth2_secret, oauth2_redirect</pre>  </li>
     
 <li> <b><u>oauth2.php</u></b> is your main file that uses the client
 </ul>
