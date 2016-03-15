@@ -106,11 +106,11 @@ if(isset($_GET['code'])) {
 
 
 } else{
-    //instead of putting a button, you can forward automatically yourself
-    print "<a class='login' href='$forward_url'>Connect Me!</a>";
+    //click Continue button instead of redirecting to itself
+    //print "<a class='login' href='$forward_url'>Connect Me!</a>";
 
     //you can also redirect automatically
-    //header( 'Location: '.$forward_url );
+    header( 'Location: '.$forward_url );
 }
 
 ?>
